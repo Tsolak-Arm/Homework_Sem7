@@ -12,13 +12,14 @@
         if (m <= n)
         {
             Console.Write(m);
-
+            
             if (m < n)
             {
                 Console.Write(", ");
             }
             PrintNaturalNumbers(m + 1, n);
         }
+        return;
     }
 
         Console.Write("Введите значение M: ");
