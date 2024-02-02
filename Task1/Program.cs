@@ -6,25 +6,8 @@
 //        M = 4; N = 8 -> "4, 5, 6, 7, 8"
 
 
-  using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.Write("Введите значение M: ");
-        int m = int.Parse(Console.ReadLine());
-
-        Console.Write("Введите значение N: ");
-        int n = int.Parse(Console.ReadLine());
-
-        Console.WriteLine($"Натуральные числа в промежутке от {m} до {n}: ");
-        PrintNaturalNumbers(m, n);
-
-        Console.ReadLine();
-    }
-
-    static void PrintNaturalNumbers(int m, int n)
+ 
+    void PrintNaturalNumbers(int m, int n)
     {
         if (m <= n)
         {
@@ -34,9 +17,17 @@ class Program
             {
                 Console.Write(", ");
             }
-
             PrintNaturalNumbers(m + 1, n);
         }
     }
-}
+
+        Console.Write("Введите значение M: ");
+        int m = int.Parse(Console.ReadLine());
+
+        Console.Write("Введите значение N: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"Натуральные числа в промежутке от {m} до {n}: ");
+        PrintNaturalNumbers(m, n);
+        Console.ReadLine();
   
